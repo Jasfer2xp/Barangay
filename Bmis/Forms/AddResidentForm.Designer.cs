@@ -32,278 +32,288 @@ namespace Bmis.Forms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddResidentForm));
-            topPanel = new Panel();
-            pictureBox1 = new PictureBox();
-            label1 = new Label();
-            panel1 = new Panel();
-            panel3 = new Panel();
-            btnBrowse = new Label();
-            residentPic = new PictureBox();
-            panel4 = new Panel();
-            txtFullName = new TextBox();
-            label3 = new Label();
-            label4 = new Label();
-            panel5 = new Panel();
-            txtAge = new TextBox();
-            label5 = new Label();
-            panel6 = new Panel();
-            txtPurok = new TextBox();
-            btnSave = new Button();
-            panel2 = new Panel();
-            topPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel1.SuspendLayout();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)residentPic).BeginInit();
-            panel4.SuspendLayout();
-            panel5.SuspendLayout();
-            panel6.SuspendLayout();
-            panel2.SuspendLayout();
-            SuspendLayout();
+            this.topPanel = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnBrowse = new System.Windows.Forms.Label();
+            this.residentPic = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.txtFullName = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.txtAge = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.txtPurok = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.topPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.residentPic)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.SuspendLayout();
             // 
             // topPanel
             // 
-            topPanel.BackColor = SystemColors.GradientInactiveCaption;
-            topPanel.Controls.Add(pictureBox1);
-            topPanel.Controls.Add(label1);
-            topPanel.Dock = DockStyle.Top;
-            topPanel.Location = new Point(0, 0);
-            topPanel.Name = "topPanel";
-            topPanel.Size = new Size(887, 37);
-            topPanel.TabIndex = 0;
-            topPanel.MouseDown += topPanel_MouseDown;
+            this.topPanel.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.topPanel.Controls.Add(this.pictureBox1);
+            this.topPanel.Controls.Add(this.label1);
+            this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.topPanel.Location = new System.Drawing.Point(0, 0);
+            this.topPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.topPanel.Name = "topPanel";
+            this.topPanel.Size = new System.Drawing.Size(887, 30);
+            this.topPanel.TabIndex = 0;
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Dock = DockStyle.Right;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(844, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(43, 37);
-            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(844, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(43, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.Left;
-            label1.AutoSize = true;
-            label1.BackColor = SystemColors.GradientInactiveCaption;
-            label1.Font = new Font("Corbel", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(12, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(137, 21);
-            label1.TabIndex = 1;
-            label1.Text = "Add new resident";
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label1.Font = new System.Drawing.Font("Corbel", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(137, 21);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Add new resident";
             // 
             // panel1
             // 
-            panel1.Controls.Add(panel3);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 37);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(887, 223);
-            panel1.TabIndex = 1;
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 30);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(887, 178);
+            this.panel1.TabIndex = 1;
             // 
             // panel3
             // 
-            panel3.BorderStyle = BorderStyle.FixedSingle;
-            panel3.Controls.Add(btnBrowse);
-            panel3.Controls.Add(residentPic);
-            panel3.Dock = DockStyle.Left;
-            panel3.Location = new Point(0, 0);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(236, 223);
-            panel3.TabIndex = 0;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.btnBrowse);
+            this.panel3.Controls.Add(this.residentPic);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(236, 178);
+            this.panel3.TabIndex = 0;
             // 
             // btnBrowse
             // 
-            btnBrowse.Anchor = AnchorStyles.None;
-            btnBrowse.AutoSize = true;
-            btnBrowse.Cursor = Cursors.Hand;
-            btnBrowse.Font = new Font("Segoe UI", 9F, FontStyle.Underline, GraphicsUnit.Point, 0);
-            btnBrowse.ForeColor = Color.FromArgb(0, 0, 192);
-            btnBrowse.Location = new Point(90, 189);
-            btnBrowse.Name = "btnBrowse";
-            btnBrowse.Size = new Size(58, 20);
-            btnBrowse.TabIndex = 1;
-            btnBrowse.Text = "Upload";
-            btnBrowse.Click += btnBrowse_Click;
+            this.btnBrowse.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnBrowse.AutoSize = true;
+            this.btnBrowse.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBrowse.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBrowse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnBrowse.Location = new System.Drawing.Point(90, 151);
+            this.btnBrowse.Name = "btnBrowse";
+            this.btnBrowse.Size = new System.Drawing.Size(58, 20);
+            this.btnBrowse.TabIndex = 1;
+            this.btnBrowse.Text = "Upload";
             // 
             // residentPic
             // 
-            residentPic.Dock = DockStyle.Top;
-            residentPic.Location = new Point(0, 0);
-            residentPic.Name = "residentPic";
-            residentPic.Size = new Size(234, 186);
-            residentPic.TabIndex = 0;
-            residentPic.TabStop = false;
+            this.residentPic.Dock = System.Windows.Forms.DockStyle.Top;
+            this.residentPic.Location = new System.Drawing.Point(0, 0);
+            this.residentPic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.residentPic.Name = "residentPic";
+            this.residentPic.Size = new System.Drawing.Size(234, 149);
+            this.residentPic.TabIndex = 0;
+            this.residentPic.TabStop = false;
             // 
             // panel4
             // 
-            panel4.Anchor = AnchorStyles.None;
-            panel4.BackColor = Color.White;
-            panel4.BorderStyle = BorderStyle.FixedSingle;
-            panel4.Controls.Add(txtFullName);
-            panel4.Location = new Point(33, 320);
-            panel4.Name = "panel4";
-            panel4.Padding = new Padding(10);
-            panel4.Size = new Size(272, 49);
-            panel4.TabIndex = 2;
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.txtFullName);
+            this.panel4.Location = new System.Drawing.Point(33, 255);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel4.Name = "panel4";
+            this.panel4.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.panel4.Size = new System.Drawing.Size(272, 40);
+            this.panel4.TabIndex = 2;
             // 
             // txtFullName
             // 
-            txtFullName.BackColor = Color.White;
-            txtFullName.BorderStyle = BorderStyle.None;
-            txtFullName.Cursor = Cursors.IBeam;
-            txtFullName.Dock = DockStyle.Fill;
-            txtFullName.Font = new Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtFullName.Location = new Point(10, 10);
-            txtFullName.Name = "txtFullName";
-            txtFullName.Size = new Size(250, 21);
-            txtFullName.TabIndex = 0;
+            this.txtFullName.BackColor = System.Drawing.Color.White;
+            this.txtFullName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtFullName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtFullName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtFullName.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFullName.Location = new System.Drawing.Point(10, 8);
+            this.txtFullName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtFullName.Name = "txtFullName";
+            this.txtFullName.Size = new System.Drawing.Size(250, 21);
+            this.txtFullName.TabIndex = 0;
             // 
             // label3
             // 
-            label3.Anchor = AnchorStyles.None;
-            label3.AutoSize = true;
-            label3.Font = new Font("Verdana", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(33, 283);
-            label3.Name = "label3";
-            label3.Size = new Size(96, 20);
-            label3.TabIndex = 3;
-            label3.Text = "Full Name";
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(33, 225);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(96, 20);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Full Name";
             // 
             // label4
             // 
-            label4.Anchor = AnchorStyles.None;
-            label4.AutoSize = true;
-            label4.Font = new Font("Verdana", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(33, 391);
-            label4.Name = "label4";
-            label4.Size = new Size(42, 20);
-            label4.TabIndex = 5;
-            label4.Text = "Age";
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(33, 312);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(42, 20);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Age";
             // 
             // panel5
             // 
-            panel5.Anchor = AnchorStyles.None;
-            panel5.BackColor = Color.White;
-            panel5.BorderStyle = BorderStyle.FixedSingle;
-            panel5.Controls.Add(txtAge);
-            panel5.Location = new Point(33, 428);
-            panel5.Name = "panel5";
-            panel5.Padding = new Padding(10);
-            panel5.Size = new Size(272, 49);
-            panel5.TabIndex = 4;
+            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.txtAge);
+            this.panel5.Location = new System.Drawing.Point(33, 341);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel5.Name = "panel5";
+            this.panel5.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.panel5.Size = new System.Drawing.Size(272, 40);
+            this.panel5.TabIndex = 4;
             // 
             // txtAge
             // 
-            txtAge.BackColor = Color.White;
-            txtAge.BorderStyle = BorderStyle.None;
-            txtAge.Cursor = Cursors.IBeam;
-            txtAge.Dock = DockStyle.Fill;
-            txtAge.Font = new Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtAge.Location = new Point(10, 10);
-            txtAge.Name = "txtAge";
-            txtAge.Size = new Size(250, 21);
-            txtAge.TabIndex = 0;
+            this.txtAge.BackColor = System.Drawing.Color.White;
+            this.txtAge.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAge.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAge.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtAge.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAge.Location = new System.Drawing.Point(10, 8);
+            this.txtAge.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtAge.Name = "txtAge";
+            this.txtAge.Size = new System.Drawing.Size(250, 21);
+            this.txtAge.TabIndex = 0;
             // 
             // label5
             // 
-            label5.Anchor = AnchorStyles.None;
-            label5.AutoSize = true;
-            label5.Font = new Font("Verdana", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(33, 503);
-            label5.Name = "label5";
-            label5.Size = new Size(57, 20);
-            label5.TabIndex = 7;
-            label5.Text = "Purok";
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(33, 401);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(57, 20);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Purok";
             // 
             // panel6
             // 
-            panel6.Anchor = AnchorStyles.None;
-            panel6.BackColor = Color.White;
-            panel6.BorderStyle = BorderStyle.FixedSingle;
-            panel6.Controls.Add(txtPurok);
-            panel6.Location = new Point(33, 540);
-            panel6.Name = "panel6";
-            panel6.Padding = new Padding(10);
-            panel6.Size = new Size(272, 49);
-            panel6.TabIndex = 6;
+            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.txtPurok);
+            this.panel6.Location = new System.Drawing.Point(33, 431);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel6.Name = "panel6";
+            this.panel6.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.panel6.Size = new System.Drawing.Size(272, 40);
+            this.panel6.TabIndex = 6;
             // 
             // txtPurok
             // 
-            txtPurok.BackColor = Color.White;
-            txtPurok.BorderStyle = BorderStyle.None;
-            txtPurok.Cursor = Cursors.IBeam;
-            txtPurok.Dock = DockStyle.Fill;
-            txtPurok.Font = new Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtPurok.Location = new Point(10, 10);
-            txtPurok.Name = "txtPurok";
-            txtPurok.Size = new Size(250, 21);
-            txtPurok.TabIndex = 0;
+            this.txtPurok.BackColor = System.Drawing.Color.White;
+            this.txtPurok.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPurok.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPurok.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtPurok.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPurok.Location = new System.Drawing.Point(10, 8);
+            this.txtPurok.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPurok.Name = "txtPurok";
+            this.txtPurok.Size = new System.Drawing.Size(250, 21);
+            this.txtPurok.TabIndex = 0;
             // 
             // btnSave
             // 
-            btnSave.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnSave.BackColor = Color.FromArgb(0, 192, 192);
-            btnSave.FlatStyle = FlatStyle.Flat;
-            btnSave.Location = new Point(807, 632);
-            btnSave.Name = "btnSave";
-            btnSave.Size = new Size(69, 29);
-            btnSave.TabIndex = 8;
-            btnSave.Text = "Save";
-            btnSave.UseVisualStyleBackColor = false;
-            btnSave.Click += btnSave_Click;
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Location = new System.Drawing.Point(807, 505);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(69, 23);
+            this.btnSave.TabIndex = 8;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
-            panel2.BorderStyle = BorderStyle.FixedSingle;
-            panel2.Controls.Add(btnSave);
-            panel2.Controls.Add(label5);
-            panel2.Controls.Add(panel6);
-            panel2.Controls.Add(label4);
-            panel2.Controls.Add(panel5);
-            panel2.Controls.Add(label3);
-            panel2.Controls.Add(panel4);
-            panel2.Controls.Add(panel1);
-            panel2.Controls.Add(topPanel);
-            panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(0, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(889, 674);
-            panel2.TabIndex = 9;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.btnSave);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.panel6);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.topPanel);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(889, 539);
+            this.panel2.TabIndex = 9;
             // 
             // AddResidentForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(889, 674);
-            Controls.Add(panel2);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "AddResidentForm";
-            StartPosition = FormStartPosition.CenterParent;
-            Text = "AddResidentForm";
-            Load += AddResidentForm_Load;
-            topPanel.ResumeLayout(false);
-            topPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel1.ResumeLayout(false);
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)residentPic).EndInit();
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
-            panel5.ResumeLayout(false);
-            panel5.PerformLayout();
-            panel6.ResumeLayout(false);
-            panel6.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(889, 539);
+            this.Controls.Add(this.panel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "AddResidentForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "AddResidentForm";
+            this.topPanel.ResumeLayout(false);
+            this.topPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.residentPic)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

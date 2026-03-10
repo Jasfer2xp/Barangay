@@ -19,6 +19,11 @@ namespace Bmis.Classes
 
         public DataTable ExecuteQuery(string sql)
         {
+            return ExecuteQuery(sql, null);
+        }
+
+        public DataTable ExecuteQuery(string sql, MySqlParameter[] parameters)
+        {
             DataTable dt = new DataTable();
             try
             {
@@ -27,6 +32,11 @@ namespace Bmis.Classes
                     conn.Open();
                     using (MySqlCommand cmd = new MySqlCommand(sql, conn))
                     {
+                        if (parameters != null)
+                        {
+                            cmd.Parameters.AddRange(parameters);
+                        }
+
                         using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd))
                         {
                             adapter.Fill(dt);
@@ -34,7 +44,10 @@ namespace Bmis.Classes
                     }
                 }
             }
-            catch (Exception ex) { MessageBox.Show("Query Error: " + ex.Message); }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Local DB Query Error: " + ex.Message);
+            }
             return dt;
         }
 
@@ -54,7 +67,7 @@ namespace Bmis.Classes
             }
             catch (Exception ex)
             {
-                MessageBox.Show("DB Error: " + ex.Message);
+                MessageBox.Show("Local DB Execution Error: " + ex.Message);
                 return false;
             }
         }

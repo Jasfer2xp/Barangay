@@ -85,6 +85,7 @@ namespace Bmis.Forms
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
@@ -132,6 +133,7 @@ namespace Bmis.Forms
             this.btnBrowse.Size = new System.Drawing.Size(58, 20);
             this.btnBrowse.TabIndex = 1;
             this.btnBrowse.Text = "Upload";
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
             // residentPic
             // 
@@ -259,13 +261,14 @@ namespace Bmis.Forms
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Location = new System.Drawing.Point(807, 505);
+            this.btnSave.Location = new System.Drawing.Point(807, 498);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(69, 23);
+            this.btnSave.Size = new System.Drawing.Size(69, 29);
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // panel2
             // 

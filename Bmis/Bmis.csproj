@@ -66,6 +66,9 @@
     <Reference Include="MySql.Data, Version=9.6.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.9.6.0\lib\net48\MySql.Data.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -113,6 +116,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BarangayData.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Classes\ApiService.cs" />
     <Compile Include="Classes\DbConnection.cs" />
     <Compile Include="Classes\TextBoxExtensions.cs" />
     <Compile Include="Controls\barangayControl.cs">
@@ -219,7 +223,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="BarangayClearance.rdlc" />
+    <EmbeddedResource Include="BarangayClearance.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\barangayControl.resx">
       <DependentUpon>barangayControl.cs</DependentUpon>
     </EmbeddedResource>

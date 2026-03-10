@@ -1,20 +1,19 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Runtime.InteropServices;
-using System.Text;
 using System.Windows.Forms;
-using System.IO; // Required for MemoryStream
-using Bmis.Classes; // Required to see your DbConnection class
+using System.IO;
+using Bmis.Classes;
+using System.Net.Http;
+using System.Text;
+using Newtonsoft.Json;
 
 namespace Bmis.Forms
 {
     public partial class AddResidentForm : Form
     {
-        // Explicitly use your custom class to avoid the "Abstract Type" error
         private Bmis.Classes.DatabaseHelper db = new Bmis.Classes.DatabaseHelper();
 
         public AddResidentForm()
@@ -22,6 +21,7 @@ namespace Bmis.Forms
             InitializeComponent();
         }
 
+        #region UI Dragging Logic
         [DllImport("user32.dll")]
         public static extern bool ReleaseCapture();
 
@@ -31,7 +31,6 @@ namespace Bmis.Forms
         private const int WM_NCLBUTTONDOWN = 0xA1;
         private const int HTCAPTION = 0x2;
 
-        // Keeps your custom dragging logic intact
         private void topPanel_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -40,35 +39,17 @@ namespace Bmis.Forms
                 SendMessage(this.Handle, WM_NCLBUTTONDOWN, HTCAPTION, 0);
             }
         }
+        #endregion
 
-        // Keeps your custom close button intact
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void AddResidentForm_Load(object sender, EventArgs e)
-        {
-        }
-
-        private void btnBrowse_Click(object sender, EventArgs e)
-        {
-            using (OpenFileDialog ofd = new OpenFileDialog())
-            {
-                ofd.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
-                if (ofd.ShowDialog() == DialogResult.OK)
-                {
-                    residentPic.Image = Image.FromFile(ofd.FileName);
-                    residentPic.SizeMode = PictureBoxSizeMode.Zoom;
-                }
-            }
-        }
-
-        private void btnSave_Click(object sender, EventArgs e)
+        private async void btnSave_Click(object sender, EventArgs e)
         {
             try
             {
-                // Basic validation so you don't save empty rows
                 if (string.IsNullOrWhiteSpace(txtFullName.Text))
                 {
                     MessageBox.Show("Please enter a name.");
@@ -96,7 +77,7 @@ namespace Bmis.Forms
 
                 if (db.ExecuteNonQuery(sql, parameters))
                 {
-                    MessageBox.Show("Resident Added Successfully!");
+                    MessageBox.Show("Resident Added Locally!");
                     this.DialogResult = DialogResult.OK;
                     this.Close();
                 }
@@ -104,6 +85,19 @@ namespace Bmis.Forms
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        private void btnBrowse_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog ofd = new OpenFileDialog())
+            {
+                ofd.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    residentPic.Image = Image.FromFile(ofd.FileName);
+                    residentPic.SizeMode = PictureBoxSizeMode.Zoom;
+                }
             }
         }
     }

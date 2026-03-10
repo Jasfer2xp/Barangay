@@ -1,5 +1,308 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Image Name="logo">
+        <Source>Embedded</Source>
+        <Value>logoxd</Value>
+        <Sizing>FitProportional</Sizing>
+        <Top>0.81703cm</Top>
+        <Left>1.7907cm</Left>
+        <Height>2.85467cm</Height>
+        <Width>3.024cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Image>
+      <Textbox Name="Textbox2">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>REPUBLIC OF THE PHILIPPINES PROVINCE OF MISAMIS OCCIDENTAL MUNICIPALITY OF CLARIN </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Times New Roman</FontFamily>
+                  <FontSize>11pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>BARANGAY MIALEN</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Times New Roman</FontFamily>
+                  <FontSize>11pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>Red</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>1.4842cm</Top>
+        <Left>7.2517cm</Left>
+        <Height>2.1875cm</Height>
+        <Width>7.43183cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox3">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>OFFICE OF THE PUNONG BARANGAY</Value>
+                <Style>
+                  <FontStyle>Italic</FontStyle>
+                  <FontFamily>Lucida Calligraphy</FontFamily>
+                  <FontSize>16pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>5.05037cm</Top>
+        <Left>5.07153cm</Left>
+        <Height>0.9175cm</Height>
+        <Width>11.74984cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Rectangle Name="Rectangle1">
+        <ReportItems>
+          <Rectangle Name="Rectangle2">
+            <KeepTogether>true</KeepTogether>
+            <Left>0.29633cm</Left>
+            <Height>19.9698cm</Height>
+            <Width>5.45064cm</Width>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+              <BackgroundColor>Yellow</BackgroundColor>
+            </Style>
+          </Rectangle>
+        </ReportItems>
+        <KeepTogether>true</KeepTogether>
+        <Top>6.91303cm</Top>
+        <Left>1.49437cm</Left>
+        <Height>19.9698cm</Height>
+        <Width>6.1068cm</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+          <BackgroundColor>Orange</BackgroundColor>
+        </Style>
+      </Rectangle>
+      <Rectangle Name="Rectangle3">
+        <ReportItems>
+          <Textbox Name="Textbox5">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>BARANGAY CLEARANCE</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Georgia</FontFamily>
+                      <FontSize>20pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>Red</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox5</rd:DefaultName>
+            <Top>0.91017cm</Top>
+            <Left>1.47792cm</Left>
+            <Height>1.00217cm</Height>
+            <Width>9.69666cm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="full_name">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!full_name.Value, "ResidentDS")</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>full_name</rd:DefaultName>
+            <Top>6.75895cm</Top>
+            <Left>5.39375cm</Left>
+            <Height>0.6cm</Height>
+            <Width>5.1195cm</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="age">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!age.Value, "ResidentDS")</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>age</rd:DefaultName>
+            <Top>8.80533cm</Top>
+            <Left>6.68492cm</Left>
+            <Height>0.6cm</Height>
+            <Width>2.5cm</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="purok">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!purok.Value, "ResidentDS")</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>purok</rd:DefaultName>
+            <Top>8.80533cm</Top>
+            <Left>1.47792cm</Left>
+            <Height>0.6cm</Height>
+            <Width>2.5cm</Width>
+            <ZIndex>3</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Image Name="resident_image">
+            <Source>Database</Source>
+            <Value>=First(Fields!resident_image.Value, "ResidentDS")</Value>
+            <MIMEType>=First(Fields!resident_image.Value, "ResidentDS")</MIMEType>
+            <Sizing>FitProportional</Sizing>
+            <Top>2.54cm</Top>
+            <Left>5.39375cm</Left>
+            <Height>3.913cm</Height>
+            <Width>5.1195cm</Width>
+            <ZIndex>4</ZIndex>
+            <ToolTip>=First(Fields!resident_image.Value, "ResidentDS")</ToolTip>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
+        </ReportItems>
+        <KeepTogether>true</KeepTogether>
+        <Top>6.91303cm</Top>
+        <Left>7.63645cm</Left>
+        <Height>19.9698cm</Height>
+        <Width>12.112cm</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Rectangle>
+    </ReportItems>
+    <Height>11in</Height>
+    <Style />
+  </Body>
+  <Width>8.5in</Width>
+  <Page>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>2cm</LeftMargin>
+    <RightMargin>2cm</RightMargin>
+    <TopMargin>2cm</TopMargin>
+    <BottomMargin>2cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="BarangayData">
@@ -7,7 +310,7 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>99e9c023-74dc-4c40-b93f-b52806b0c0aa</rd:DataSourceID>
+      <rd:DataSourceID>edb75603-5fca-44ed-a402-440014075a3d</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -40,7 +343,7 @@
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>BarangayData</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\magha\source\repos\Bmis\Barangay\Barangay\BarangayData.xsd</rd:SchemaPath>
+        <rd:SchemaPath>C:\Users\magha\source\repos\Barangay-system\Bmis\Bmis\BarangayData.xsd</rd:SchemaPath>
         <rd:TableName>ResidentTable</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
@@ -48,789 +351,6 @@
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
-  <ReportSections>
-    <ReportSection>
-      <Body>
-        <ReportItems>
-          <Rectangle Name="Rectangle3">
-            <ReportItems>
-              <Textbox Name="Textbox3">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>BARANGAY CLEARANCE</Value>
-                        <Style>
-                          <FontStyle>Normal</FontStyle>
-                          <FontFamily>Georgia</FontFamily>
-                          <FontSize>20pt</FontSize>
-                          <FontWeight>Bold</FontWeight>
-                          <TextDecoration>None</TextDecoration>
-                          <Color>Red</Color>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox3</rd:DefaultName>
-                <Top>0.7112cm</Top>
-                <Left>8.93233cm</Left>
-                <Height>0.9175cm</Height>
-                <Width>9.485cm</Width>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-              <Image Name="resident_image">
-                <Source>Database</Source>
-                <Value>=First(Fields!resident_image.Value, "ResidentDS")</Value>
-                <MIMEType>image/png</MIMEType>
-                <Sizing>FitProportional</Sizing>
-                <Top>2.7432cm</Top>
-                <Left>14.03867cm</Left>
-                <Height>3.90257cm</Height>
-                <Width>3.61667cm</Width>
-                <ZIndex>1</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                </Style>
-              </Image>
-              <Textbox Name="Textbox9">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>To whom it may concern:</Value>
-                        <Style>
-                          <FontStyle>Normal</FontStyle>
-                          <FontFamily>Calibri</FontFamily>
-                          <FontWeight>Normal</FontWeight>
-                          <TextDecoration>None</TextDecoration>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style>
-                      <TextAlign>Center</TextAlign>
-                    </Style>
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox5</rd:DefaultName>
-                <Top>7.47832cm</Top>
-                <Left>6.731cm</Left>
-                <Height>0.66351cm</Height>
-                <Width>4.00284cm</Width>
-                <ZIndex>2</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-              <Textbox Name="full_name">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>=First(Fields!full_name.Value, "ResidentDS")</Value>
-                        <Style />
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>full_name</rd:DefaultName>
-                <Top>7.47832cm</Top>
-                <Left>14.45683cm</Left>
-                <Height>0.6cm</Height>
-                <Width>2.5cm</Width>
-                <ZIndex>3</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-            </ReportItems>
-            <KeepTogether>true</KeepTogether>
-            <Top>4.8895cm</Top>
-            <Left>1.19803cm</Left>
-            <Height>21.95217cm</Height>
-            <Width>18.883cm</Width>
-            <Style>
-              <Border>
-                <Style>Solid</Style>
-              </Border>
-              <TopBorder>
-                <Width>1pt</Width>
-              </TopBorder>
-              <BottomBorder>
-                <Width>1pt</Width>
-              </BottomBorder>
-              <LeftBorder>
-                <Width>1pt</Width>
-              </LeftBorder>
-              <RightBorder>
-                <Width>1pt</Width>
-              </RightBorder>
-            </Style>
-          </Rectangle>
-          <Image Name="logo">
-            <Source>Embedded</Source>
-            <Value>logoxd</Value>
-            <Sizing>FitProportional</Sizing>
-            <Top>0.75353cm</Top>
-            <Left>2.08703cm</Left>
-            <Height>3.44733cm</Height>
-            <Width>3.61667cm</Width>
-            <ZIndex>1</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-            </Style>
-          </Image>
-          <Rectangle Name="Rectangle1">
-            <ReportItems>
-              <Rectangle Name="Rectangle2">
-                <ReportItems>
-                  <Textbox Name="Textbox4">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>SANGGUNIANG BARANGAY</Value>
-                            <Style>
-                              <FontStyle>Normal</FontStyle>
-                              <FontFamily>Georgia</FontFamily>
-                              <FontSize>12pt</FontSize>
-                              <FontWeight>Bold</FontWeight>
-                              <TextDecoration>None</TextDecoration>
-                            </Style>
-                          </TextRun>
-                        </TextRuns>
-                        <Style>
-                          <TextAlign>Center</TextAlign>
-                        </Style>
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>Textbox4</rd:DefaultName>
-                    <Top>0.35983cm</Top>
-                    <Left>0.3175cm</Left>
-                    <Height>1.21383cm</Height>
-                    <Width>4.12983cm</Width>
-                    <Style>
-                      <Border>
-                        <Style>None</Style>
-                      </Border>
-                      <PaddingLeft>2pt</PaddingLeft>
-                      <PaddingRight>2pt</PaddingRight>
-                      <PaddingTop>2pt</PaddingTop>
-                      <PaddingBottom>2pt</PaddingBottom>
-                    </Style>
-                  </Textbox>
-                  <Textbox Name="Textbox5">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>REY M.EBARLE</Value>
-                            <Style>
-                              <FontStyle>Normal</FontStyle>
-                              <FontFamily>Calibri</FontFamily>
-                              <FontSize>11pt</FontSize>
-                              <FontWeight>Bold</FontWeight>
-                              <TextDecoration>None</TextDecoration>
-                            </Style>
-                          </TextRun>
-                        </TextRuns>
-                        <Style>
-                          <TextAlign>Center</TextAlign>
-                        </Style>
-                      </Paragraph>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>Punong Barangay</Value>
-                            <Style>
-                              <FontStyle>Normal</FontStyle>
-                              <FontFamily>Lucida Calligraphy</FontFamily>
-                              <FontSize>9pt</FontSize>
-                              <FontWeight>Normal</FontWeight>
-                              <TextDecoration>None</TextDecoration>
-                            </Style>
-                          </TextRun>
-                        </TextRuns>
-                        <LeftIndent>0cm</LeftIndent>
-                        <RightIndent>0cm</RightIndent>
-                        <Style>
-                          <TextAlign>Center</TextAlign>
-                          <LineHeight>12pt</LineHeight>
-                        </Style>
-                      </Paragraph>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value />
-                            <Style>
-                              <FontStyle>Normal</FontStyle>
-                              <FontFamily>Calibri</FontFamily>
-                              <FontWeight>Bold</FontWeight>
-                              <TextDecoration>None</TextDecoration>
-                            </Style>
-                          </TextRun>
-                        </TextRuns>
-                        <LeftIndent>0cm</LeftIndent>
-                        <RightIndent>0cm</RightIndent>
-                        <Style>
-                          <TextAlign>Center</TextAlign>
-                          <LineHeight>12pt</LineHeight>
-                        </Style>
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>Textbox5</rd:DefaultName>
-                    <Top>2.07433cm</Top>
-                    <Left>0.59267cm</Left>
-                    <Height>1.12917cm</Height>
-                    <Width>3.85467cm</Width>
-                    <ZIndex>1</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>None</Style>
-                      </Border>
-                      <PaddingLeft>2pt</PaddingLeft>
-                      <PaddingRight>2pt</PaddingRight>
-                      <PaddingTop>2pt</PaddingTop>
-                      <PaddingBottom>2pt</PaddingBottom>
-                    </Style>
-                  </Textbox>
-                  <Textbox Name="Textbox6">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>EULESIS F. NACIONAL</Value>
-                            <Style>
-                              <FontStyle>Normal</FontStyle>
-                              <FontFamily>Calibri</FontFamily>
-                              <FontWeight>Bold</FontWeight>
-                              <TextDecoration>None</TextDecoration>
-                            </Style>
-                          </TextRun>
-                        </TextRuns>
-                        <Style>
-                          <TextAlign>Center</TextAlign>
-                        </Style>
-                      </Paragraph>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value> Kagawad</Value>
-                            <Style>
-                              <FontStyle>Normal</FontStyle>
-                              <FontFamily>Lucida Calligraphy</FontFamily>
-                              <FontSize>9pt</FontSize>
-                              <FontWeight>Normal</FontWeight>
-                              <TextDecoration>None</TextDecoration>
-                            </Style>
-                          </TextRun>
-                        </TextRuns>
-                        <LeftIndent>0cm</LeftIndent>
-                        <RightIndent>0cm</RightIndent>
-                        <Style>
-                          <TextAlign>Center</TextAlign>
-                          <LineHeight>12pt</LineHeight>
-                        </Style>
-                      </Paragraph>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>Com. On Finance/Appropriation</Value>
-                            <Style>
-                              <FontStyle>Normal</FontStyle>
-                              <FontFamily>Lucida Calligraphy</FontFamily>
-                              <FontSize>9pt</FontSize>
-                              <FontWeight>Normal</FontWeight>
-                              <TextDecoration>None</TextDecoration>
-                              <Color>#000000</Color>
-                            </Style>
-                          </TextRun>
-                        </TextRuns>
-                        <Style>
-                          <TextAlign>Center</TextAlign>
-                        </Style>
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>Textbox5</rd:DefaultName>
-                    <Top>3.30933cm</Top>
-                    <Left>0.59267cm</Left>
-                    <Height>1.84884cm</Height>
-                    <Width>3.85467cm</Width>
-                    <ZIndex>2</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>None</Style>
-                      </Border>
-                      <PaddingLeft>2pt</PaddingLeft>
-                      <PaddingRight>2pt</PaddingRight>
-                      <PaddingTop>2pt</PaddingTop>
-                      <PaddingBottom>2pt</PaddingBottom>
-                    </Style>
-                  </Textbox>
-                  <Textbox Name="Textbox7">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>PABLITO G. MORALES</Value>
-                            <Style>
-                              <FontStyle>Normal</FontStyle>
-                              <FontFamily>Calibri</FontFamily>
-                              <FontWeight>Bold</FontWeight>
-                              <TextDecoration>None</TextDecoration>
-                            </Style>
-                          </TextRun>
-                        </TextRuns>
-                        <Style>
-                          <TextAlign>Center</TextAlign>
-                        </Style>
-                      </Paragraph>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>Kagawad</Value>
-                            <Style>
-                              <FontStyle>Normal</FontStyle>
-                              <FontFamily>Lucida Calligraphy</FontFamily>
-                              <FontSize>9pt</FontSize>
-                              <FontWeight>Normal</FontWeight>
-                              <TextDecoration>None</TextDecoration>
-                            </Style>
-                          </TextRun>
-                        </TextRuns>
-                        <LeftIndent>0cm</LeftIndent>
-                        <RightIndent>0cm</RightIndent>
-                        <Style>
-                          <TextAlign>Center</TextAlign>
-                          <LineHeight>12pt</LineHeight>
-                        </Style>
-                      </Paragraph>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>Com. on Health</Value>
-                            <Style>
-                              <FontStyle>Normal</FontStyle>
-                              <FontFamily>Lucida Calligraphy</FontFamily>
-                              <FontSize>9pt</FontSize>
-                              <FontWeight>Normal</FontWeight>
-                              <TextDecoration>None</TextDecoration>
-                            </Style>
-                          </TextRun>
-                        </TextRuns>
-                        <LeftIndent>0cm</LeftIndent>
-                        <RightIndent>0cm</RightIndent>
-                        <Style>
-                          <TextAlign>Center</TextAlign>
-                          <LineHeight>12pt</LineHeight>
-                        </Style>
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>Textbox5</rd:DefaultName>
-                    <Top>5.33456cm</Top>
-                    <Left>0.59266cm</Left>
-                    <Height>1.31967cm</Height>
-                    <Width>3.85467cm</Width>
-                    <ZIndex>3</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>None</Style>
-                      </Border>
-                      <PaddingLeft>2pt</PaddingLeft>
-                      <PaddingRight>2pt</PaddingRight>
-                      <PaddingTop>2pt</PaddingTop>
-                      <PaddingBottom>2pt</PaddingBottom>
-                    </Style>
-                  </Textbox>
-                  <Textbox Name="Textbox8">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value xml:space="preserve"> </Value>
-                            <Style>
-                              <FontStyle>Normal</FontStyle>
-                              <FontFamily>Calibri</FontFamily>
-                              <FontWeight>Normal</FontWeight>
-                              <TextDecoration>None</TextDecoration>
-                            </Style>
-                          </TextRun>
-                          <TextRun>
-                            <Value>EDWIN M. EGOT</Value>
-                            <Style>
-                              <FontStyle>Normal</FontStyle>
-                              <FontFamily>Calibri</FontFamily>
-                              <FontWeight>Bold</FontWeight>
-                              <TextDecoration>None</TextDecoration>
-                            </Style>
-                          </TextRun>
-                        </TextRuns>
-                        <Style>
-                          <TextAlign>Center</TextAlign>
-                        </Style>
-                      </Paragraph>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>Kagawad</Value>
-                            <Style>
-                              <FontStyle>Normal</FontStyle>
-                              <FontFamily>Lucida Calligraphy</FontFamily>
-                              <FontSize>9pt</FontSize>
-                              <FontWeight>Normal</FontWeight>
-                              <TextDecoration>None</TextDecoration>
-                            </Style>
-                          </TextRun>
-                        </TextRuns>
-                        <LeftIndent>0cm</LeftIndent>
-                        <RightIndent>0cm</RightIndent>
-                        <Style>
-                          <TextAlign>Center</TextAlign>
-                          <LineHeight>12pt</LineHeight>
-                        </Style>
-                      </Paragraph>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>Com. On Infr</Value>
-                            <Style>
-                              <FontStyle>Normal</FontStyle>
-                              <FontFamily>Lucida Calligraphy</FontFamily>
-                              <FontSize>9pt</FontSize>
-                              <FontWeight>Normal</FontWeight>
-                              <TextDecoration>None</TextDecoration>
-                            </Style>
-                          </TextRun>
-                        </TextRuns>
-                        <LeftIndent>0cm</LeftIndent>
-                        <RightIndent>0cm</RightIndent>
-                        <Style>
-                          <TextAlign>Center</TextAlign>
-                          <LineHeight>12pt</LineHeight>
-                        </Style>
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>Textbox5</rd:DefaultName>
-                    <Top>6.83062cm</Top>
-                    <Left>0.59267cm</Left>
-                    <Height>1.42551cm</Height>
-                    <Width>3.85467cm</Width>
-                    <ZIndex>4</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>None</Style>
-                      </Border>
-                      <PaddingLeft>2pt</PaddingLeft>
-                      <PaddingRight>2pt</PaddingRight>
-                      <PaddingTop>2pt</PaddingTop>
-                      <PaddingBottom>2pt</PaddingBottom>
-                    </Style>
-                  </Textbox>
-                  <Textbox Name="age">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>=First(Fields!age.Value, "ResidentDS")</Value>
-                            <Style />
-                          </TextRun>
-                        </TextRuns>
-                        <Style />
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>age</rd:DefaultName>
-                    <Top>8.65716cm</Top>
-                    <Left>1.18534cm</Left>
-                    <Height>0.6cm</Height>
-                    <Width>2.5cm</Width>
-                    <ZIndex>5</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>None</Style>
-                      </Border>
-                      <PaddingLeft>2pt</PaddingLeft>
-                      <PaddingRight>2pt</PaddingRight>
-                      <PaddingTop>2pt</PaddingTop>
-                      <PaddingBottom>2pt</PaddingBottom>
-                    </Style>
-                  </Textbox>
-                  <Textbox Name="purok">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>=First(Fields!purok.Value, "ResidentDS")</Value>
-                            <Style />
-                          </TextRun>
-                        </TextRuns>
-                        <Style />
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>purok</rd:DefaultName>
-                    <Top>9.63083cm</Top>
-                    <Left>1.18534cm</Left>
-                    <Height>0.6cm</Height>
-                    <Width>2.5cm</Width>
-                    <ZIndex>6</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>None</Style>
-                      </Border>
-                      <PaddingLeft>2pt</PaddingLeft>
-                      <PaddingRight>2pt</PaddingRight>
-                      <PaddingTop>2pt</PaddingTop>
-                      <PaddingBottom>2pt</PaddingBottom>
-                    </Style>
-                  </Textbox>
-                </ReportItems>
-                <KeepTogether>true</KeepTogether>
-                <Top>0.35137cm</Top>
-                <Left>0.5715cm</Left>
-                <Height>17.65533cm</Height>
-                <Width>5.167cm</Width>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <BackgroundColor>Orange</BackgroundColor>
-                </Style>
-              </Rectangle>
-            </ReportItems>
-            <KeepTogether>true</KeepTogether>
-            <Top>4.8895cm</Top>
-            <Left>1.19803cm</Left>
-            <Height>21.95217cm</Height>
-            <Width>6.0795cm</Width>
-            <ZIndex>2</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <BackgroundColor>Yellow</BackgroundColor>
-            </Style>
-          </Rectangle>
-          <Textbox Name="Textbox1">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>REPUBLIC OF THE PHILIPPINES PROVINCE OF MISAMIS OCCIDENTAL MUNICIPALITY OF CLARIN</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>Times New Roman</FontFamily>
-                      <FontSize>11pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value xml:space="preserve"> </Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>Times New Roman</FontFamily>
-                      <FontSize>11pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>BARANGAY MIALEN</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>Times New Roman</FontFamily>
-                      <FontSize>11pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>Red</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>0.75353cm</Top>
-            <Left>7.92903cm</Left>
-            <Height>1.87cm</Height>
-            <Width>7.74933cm</Width>
-            <ZIndex>3</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox2">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>OFFICE OF THE PUNONG BARANGAY</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>Microsoft YaHei</FontFamily>
-                      <FontSize>16pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>3.6957cm</Top>
-            <Left>6.4262cm</Left>
-            <Height>0.7905cm</Height>
-            <Width>10.90316cm</Width>
-            <ZIndex>4</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-        </ReportItems>
-        <Height>11in</Height>
-        <Style />
-      </Body>
-      <Width>8.5in</Width>
-      <Page>
-        <PageHeight>29.7cm</PageHeight>
-        <PageWidth>21cm</PageWidth>
-        <LeftMargin>2cm</LeftMargin>
-        <RightMargin>2cm</RightMargin>
-        <TopMargin>2cm</TopMargin>
-        <BottomMargin>2cm</BottomMargin>
-        <ColumnSpacing>0.13cm</ColumnSpacing>
-        <Style />
-      </Page>
-    </ReportSection>
-  </ReportSections>
-  <ReportParameters>
-    <ReportParameter Name="ResidentName">
-      <DataType>String</DataType>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="Age">
-      <DataType>String</DataType>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="Status">
-      <DataType>String</DataType>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="Purok">
-      <DataType>String</DataType>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="Purpose">
-      <DataType>String</DataType>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
-  </ReportParameters>
-  <ReportParametersLayout>
-    <GridLayoutDefinition>
-      <NumberOfColumns>4</NumberOfColumns>
-      <NumberOfRows>2</NumberOfRows>
-      <CellDefinitions>
-        <CellDefinition>
-          <ColumnIndex>0</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>ResidentName</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>1</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>Age</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>2</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>Status</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>3</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>Purok</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>0</ColumnIndex>
-          <RowIndex>1</RowIndex>
-          <ParameterName>Purpose</ParameterName>
-        </CellDefinition>
-      </CellDefinitions>
-    </GridLayoutDefinition>
-  </ReportParametersLayout>
   <EmbeddedImages>
     <EmbeddedImage Name="logoxd">
       <MIMEType>image/png</MIMEType>
@@ -931,11 +451,7 @@ Buys+aawIFBD7q45A6vfroPFK/bC+vwGOHjw4oDdW/D3am3thvDmL+Cnc6rIvQ2yeEgUnpNDbZzT94FZ
 egheW7UPpj1eAROnlsG7a+oJk1a7/xwZOIt+yBNPVoGYrkLKMB3iU4pgybI9pKwXJ6FNmh4m5EHOL3aBzzhCfAgUWJIT1t5NRs9hELW/tPhvA94fngcL1Fbk7oNxj2wCs00lFZjRKT6cwdLD2vVzgmyogtOYStPo70W4VFZQvKPNDt8KxqF+zNqNjjgxom1M8cWQqGiQObUclr+xnzTCRo2D0enbJQZuBR6DGgc3fJhvJD32bcmE5hZql6PHWghlXFffTGhc9KuQ2sZjkKXDgq9/5zoQeBxeA07Owm6PK3+zHybO3ALJpFsN0s9YARn8mpUCf2Mk7VNzmvFGgsN7P/5efX9CinsOBaYoW16qxe6dzSm+Qs7uPslKRlesLXANzQ+T1Q1Wuwb3jy+DFxbsJg5+/acXyWqMD11/0ez/J6DzjsKF3XA+a7hE4k4v/rIGfjghDAkymqFuiE7wYh+0a3jfnOQ+IzgN1ezyZ+Ew3agHCkx9fzEKCqJt4pX8IRbFeMas+Azerp5i7UanyRbsxUBnTLwHuCQPiMMNGD+tHF761R8hr6gRavZ8CWe/7Ihoi+7eATNxv0t81RsRDLwOzF7AQGi+pxFeXvQnmDijAqQRAeCSPeQ+opN0HOaEGqSLlbx/Mct6icXle57ESKgWobh95A7CrACrsySdZDnLen6czXMwzqa3MWKoOybVfw3NtRhsWJfsgaQ0H4wcuxFmZlWRBxNTP8rKvyA9k7HJXGtbD8lGRoYJyQPSvKH3Rtlw30f+m8DPiRnXe40cR/pyYR1/59/hclsPnDrTAQfq/wqbKk6QHLNXFu+Bx57YBqMeLIXkdD8R7lgUjkQN8LoZKdjDiPoVRlL/jDXvFqfv6fihwSF4vzTJkeI/BEQT/8amp2LQjZf1JZyslTA2b2OcqF9mpMBVky3Qi84w9gmLtXqATfSAIGoweGiAdGLJnF4Os7K3w/yXa2DJiloyNet36xqgWD8CobLjsKnyJFRu
 Ow1bt5+GqurIK77ftPUklISPg9t3BH6/vgHefLsOlq6shWcX1MDs7O0wfsYWGDG2FFKHGSBIGrAoGNhmKRH7lfnAlGr0MlLwKiNp7azkaWJlbSOv+F8VHP5H+MGqGNEgQBktiu8KubG4CuPDZla0CWbFn8Mr/rWs3VsdJ3o+Z0S1jRGNTpMY6IkhQhTp8YV+AfYMM1kj/cPYZBW4VC/wokYedLNdB7Pjls2uk7/j57gf7s/g9C2rCjEJKjkfOe9gH+D34PcxYqCTFd1trFh4nJW8O3hZyxOc+ivmNPdkTim2RwKHNKmR4n+GuTGY4mGz6QI3bIPD4vI9FC/r83hFWy7Ing2sXd3Miepek+g+akp1n2NsnnZG1DoY0dcZJxpdcWLwqkkMdg+wXcX9GNHfGTlObTeJRedNYuExVvLUsg5PuSCr+byi/zpe9j1pcWkPc45CGa8nknpyz8wyobhDEU1WcFcuK0kFPI5KwJXd7NwwyuIyHuZlbYbV6Z3Dy/pzZpe2QFDUhYJLW8w7fUt5p74MX/G9oHgXoWbgXfpzVqc+l5f1mRZnMFNQCkdzsteB58Xz4/dERe1CjUFNKoq7EihQgyLZubj6o3nU30Y+Q8ebCgIFBQUFBQUFBQUFBQUFBQUFBQXFfwH/AIzVEDZXYiVHAAAAAElFTkSuQmCC</ImageData>
     </EmbeddedImage>
-    <EmbeddedImage Name="profile">
-      <MIMEType>image/png</MIMEType>
-      <ImageData>iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAChUlEQVR4nO2aTU4bYRQEH8cju+ySrJiscmqyCCvCERJeNFJHQtZgz5/pkqdL+iQWHk+5CyxhuSqEK/BFJwB4qKo/OuPPwchQVX+rqnVeq+qHW+qoDCcxEgUYoxOFF6MThRejE+X6fJ+IMRVn6jHjteHKfxmv+u0/DXLusWEHhgsDnwaZc01YyTBj2Kkgc68NCxhmDvpekCXPES4wLBjyXJClzxV2GLAvBFnznGHDcD0jyNrnPjTDysHmBtlyj8OxZaheEGTrvQ7Bt43/XffCIOf+6x9dDs1dVb1s/KijVwR5L8pvOR2WO42w5XOnXhlkKsrz0YOMfFaU56r6uuL6LUFK9/x//9ElbKQ3Bgk70wnCohOERScIi04QFp0gLDpBWHSCsOgEYdEJMj3E1vNYVfc7eCzlk+699+v5cPoK52kHj6X8utJr+XASpG47yKPpLev+Vt+yXHQ8IAIiHhQBEQ+KgIgHRUDEgyIg4kEREPGgCIh4UAREPCgCIh4UAREPioCIB0VAxIMiIOJBERDxoAiIeFAERDwoAiIeFAERD4qAiAdFQMSDIiDiQREQ8aAIiHhQBEQ8KAIiHhQBEQ+KgIgHRUD8fOMwfmnahX0Pu8Cbb68/6az59vzN7GEXgGHfwy4Aw76HXQCGfQ+7AAz7HnYBGPY97AIw7HvYBWDY97ALwLDvYReAYd/DLgDDvoddAIZ9D7sADPsedgEY9j3sAjDse9gFYNj3sAvAsO9hF4Bh38MuAMO+h10Ahn0PuwAM+x52ARj2PewCMOx72AVg2PewC8Cw72EXgGHfwy4Aw76HXQCGfQ+7AAz7HnYBGPY97AIw7HucCuRUgjT4JEixToIU66ziHyGJUvAU8G7yAAAAAElFTkSuQmCC</ImageData>
-    </EmbeddedImage>
   </EmbeddedImages>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>f176610c-8d89-473c-87ee-af23fc22d9f9</rd:ReportID>
+  <rd:ReportID>5e1df906-3d31-4e63-beea-c7fb2b7df1ee</rd:ReportID>
 </Report>

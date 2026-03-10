@@ -4,13 +4,14 @@ using MySql.Data.MySqlClient;
 using System;
 using System.Data;
 using System.Windows.Forms;
-
+using System.Threading.Tasks;
 
 namespace Bmis.Controls
 {
     public partial class barangayControl : UserControl
     {
         private DatabaseHelper db = new DatabaseHelper();
+        private ApiService api = new ApiService();
 
         public barangayControl()
         {
@@ -22,12 +23,20 @@ namespace Bmis.Controls
             dgvResidents.MultiSelect = false;
         }
 
-        private void LoadResidentList()
+        private async void LoadResidentList()
         {
             try
             {
-                string query = "SELECT id, full_name, age, purok FROM residents";
-                dgvResidents.DataSource = db.ExecuteQuery(query);
+                DataTable localData = db.ExecuteQuery("SELECT id, full_name, age, purok FROM residents");
+
+                DataTable liveData = await api.GetEmployeeData("employee-details");
+
+                if (liveData != null)
+                {
+                    localData.Merge(liveData);
+                }
+
+                dgvResidents.DataSource = localData;
             }
             catch (Exception ex)
             {
@@ -35,22 +44,37 @@ namespace Bmis.Controls
             }
         }
 
-        private void searchProfile_TextChanged(object sender, EventArgs e)
+        private async void searchProfile_TextChanged(object sender, EventArgs e)
         {
-            string query = $"SELECT id, full_name, age, purok FROM residents WHERE full_name LIKE '%{searchProfile.Text}%'";
-            dgvResidents.DataSource = db.ExecuteQuery(query);
+            try
+            {
+                string searchText = searchProfile.Text;
+
+                string localQuery = "SELECT id, full_name, age, purok FROM residents WHERE full_name LIKE @name";
+                MySqlParameter[] param = { new MySqlParameter("@name", "%" + searchText + "%") };
+                DataTable localData = db.ExecuteQuery(localQuery, param);
+
+                if (string.IsNullOrWhiteSpace(searchText))
+                {
+                    LoadResidentList();
+                    return;
+                }
+
+                dgvResidents.DataSource = localData;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Search Error: " + ex.Message);
+            }
         }
 
         private void generateClearanceBtn_Click(object sender, EventArgs e)
         {
-            // CurrentRow works even if you just clicked a single cell
             if (dgvResidents.CurrentRow != null && dgvResidents.CurrentRow.Index >= 0)
             {
                 try
                 {
-                    // Get the ID from the currently active row
                     int id = Convert.ToInt32(dgvResidents.CurrentRow.Cells["id"].Value);
-
                     ReportForm reportWindow = new ReportForm(id);
                     reportWindow.ShowDialog();
                 }

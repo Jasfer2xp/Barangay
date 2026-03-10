@@ -17,12 +17,13 @@ namespace Bmis.Forms
         private recordControl recordControl = new recordControl();
         private barangayControl barangayControl = new barangayControl();
         private blotterControl blotterControl = new blotterControl();
-        private listControl officialControl = new listControl();
+        private listControl officialListControl = new listControl();
         private organizationControl organizeControl = new organizationControl();
         private reportControl reportControl = new reportControl();
         private settingControl settingControl = new settingControl();
         private userControl userControl = new userControl();
         private purokControl purokControl = new purokControl();
+        private officialControl officialControl = new officialControl();
 
         public Dashboard()
         {
@@ -34,12 +35,13 @@ namespace Bmis.Forms
             recordControl.Dock = DockStyle.Fill;
             barangayControl.Dock = DockStyle.Fill;
             blotterControl.Dock = DockStyle.Fill;
-            officialControl.Dock = DockStyle.Fill;
+            officialListControl.Dock = DockStyle.Fill;
             organizeControl.Dock = DockStyle.Fill;
             reportControl.Dock = DockStyle.Fill;
             settingControl.Dock = DockStyle.Fill;
             userControl.Dock = DockStyle.Fill;
             purokControl.Dock = DockStyle.Fill;
+            officialControl.Dock = DockStyle.Fill;
 
             mainPanel.Controls.Add(dashboardControl);
         }
@@ -84,7 +86,7 @@ namespace Bmis.Forms
 
         private void officialBtn_Click(object sender, EventArgs e)
         {
-            ShowControl(officialControl);
+            ShowControl(officialListControl);
         }
 
         private void organizeBtn_Click(object sender, EventArgs e)
@@ -110,6 +112,10 @@ namespace Bmis.Forms
         private void purokBtn_Click(object sender, EventArgs e)
         {
             ShowControl(purokControl);
+        }
+        private void officialMembersBtn_Click(object sender, EventArgs e)
+        {
+            ShowControl(officialControl);
         }
 
         private void Dashboard_Load(object sender, EventArgs e)

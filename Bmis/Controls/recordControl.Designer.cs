@@ -32,162 +32,173 @@ namespace Bmis.Controls
         /// </summary>
         private void InitializeComponent()
         {
-            recordPanel = new Panel();
-            panel6 = new Panel();
-            panel2 = new Panel();
-            panel1 = new Panel();
-            label2 = new Label();
-            label1 = new Label();
-            panel5 = new Panel();
-            flowLayoutPanel1 = new FlowLayoutPanel();
-            searchInput = new TextBox();
-            panel3 = new Panel();
-            panel4 = new Panel();
-            addProfileBtn = new Button();
-            recordPanel.SuspendLayout();
-            panel1.SuspendLayout();
-            panel5.SuspendLayout();
-            flowLayoutPanel1.SuspendLayout();
-            panel3.SuspendLayout();
-            SuspendLayout();
+            this.recordPanel = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.searchInput = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.addProfileBtn = new System.Windows.Forms.Button();
+            this.recordPanel.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.SuspendLayout();
             // 
             // recordPanel
             // 
-            recordPanel.BackColor = SystemColors.ControlLightLight;
-            recordPanel.Controls.Add(panel6);
-            recordPanel.Controls.Add(panel2);
-            recordPanel.Controls.Add(panel1);
-            recordPanel.Dock = DockStyle.Fill;
-            recordPanel.Location = new Point(0, 0);
-            recordPanel.Name = "recordPanel";
-            recordPanel.Size = new Size(1245, 742);
-            recordPanel.TabIndex = 0;
+            this.recordPanel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.recordPanel.Controls.Add(this.panel6);
+            this.recordPanel.Controls.Add(this.panel2);
+            this.recordPanel.Controls.Add(this.panel1);
+            this.recordPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.recordPanel.Location = new System.Drawing.Point(0, 0);
+            this.recordPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.recordPanel.Name = "recordPanel";
+            this.recordPanel.Size = new System.Drawing.Size(1245, 594);
+            this.recordPanel.TabIndex = 0;
             // 
             // panel6
             // 
-            panel6.BackColor = SystemColors.ActiveBorder;
-            panel6.Dock = DockStyle.Fill;
-            panel6.Location = new Point(0, 194);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(1245, 548);
-            panel6.TabIndex = 2;
+            this.panel6.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(0, 156);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1245, 438);
+            this.panel6.TabIndex = 2;
             // 
             // panel2
             // 
-            panel2.BackColor = SystemColors.ControlLight;
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(0, 137);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(1245, 57);
-            panel2.TabIndex = 1;
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 110);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1245, 46);
+            this.panel2.TabIndex = 1;
             // 
             // panel1
             // 
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(panel5);
-            panel1.Controls.Add(panel3);
-            panel1.Dock = DockStyle.Top;
-            panel1.Font = new Font("Malgun Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1245, 137);
-            panel1.TabIndex = 0;
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.panel5);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Font = new System.Drawing.Font("Malgun Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1245, 110);
+            this.panel1.TabIndex = 0;
             // 
             // label2
             // 
-            label2.Anchor = AnchorStyles.None;
-            label2.AutoSize = true;
-            label2.Location = new Point(451, 67);
-            label2.Name = "label2";
-            label2.Size = new Size(365, 23);
-            label2.TabIndex = 6;
-            label2.Text = "This panel contains residents' profile and data\r\n";
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(451, 54);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(365, 23);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "This panel contains residents\' profile and data\r\n";
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.Top;
-            label1.AutoSize = true;
-            label1.Font = new Font("Verdana", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(502, 17);
-            label1.Name = "label1";
-            label1.Size = new Size(258, 28);
-            label1.TabIndex = 5;
-            label1.Text = "Residents' Records";
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(502, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(258, 28);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Residents\' Records";
             // 
             // panel5
             // 
-            panel5.Controls.Add(flowLayoutPanel1);
-            panel5.Dock = DockStyle.Left;
-            panel5.Location = new Point(0, 0);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(399, 137);
-            panel5.TabIndex = 4;
+            this.panel5.Controls.Add(this.flowLayoutPanel1);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(399, 110);
+            this.panel5.TabIndex = 4;
             // 
             // flowLayoutPanel1
             // 
-            flowLayoutPanel1.BorderStyle = BorderStyle.FixedSingle;
-            flowLayoutPanel1.Controls.Add(searchInput);
-            flowLayoutPanel1.Location = new Point(74, 65);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Padding = new Padding(10);
-            flowLayoutPanel1.Size = new Size(264, 40);
-            flowLayoutPanel1.TabIndex = 2;
+            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.flowLayoutPanel1.Controls.Add(this.searchInput);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(74, 52);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(264, 32);
+            this.flowLayoutPanel1.TabIndex = 2;
             // 
             // searchInput
             // 
-            searchInput.BorderStyle = BorderStyle.None;
-            searchInput.Dock = DockStyle.Fill;
-            searchInput.Font = new Font("Verdana", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            searchInput.Location = new Point(13, 13);
-            searchInput.Name = "searchInput";
-            searchInput.Size = new Size(238, 22);
-            searchInput.TabIndex = 0;
+            this.searchInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.searchInput.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.searchInput.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchInput.Location = new System.Drawing.Point(13, 10);
+            this.searchInput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.searchInput.Name = "searchInput";
+            this.searchInput.Size = new System.Drawing.Size(238, 22);
+            this.searchInput.TabIndex = 0;
             // 
             // panel3
             // 
-            panel3.Controls.Add(panel4);
-            panel3.Controls.Add(addProfileBtn);
-            panel3.Dock = DockStyle.Right;
-            panel3.Location = new Point(857, 0);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(388, 137);
-            panel3.TabIndex = 3;
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Controls.Add(this.addProfileBtn);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(857, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(388, 110);
+            this.panel3.TabIndex = 3;
             // 
             // panel4
             // 
-            panel4.Dock = DockStyle.Right;
-            panel4.Location = new Point(220, 0);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(168, 137);
-            panel4.TabIndex = 0;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel4.Location = new System.Drawing.Point(220, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(168, 110);
+            this.panel4.TabIndex = 0;
             // 
             // addProfileBtn
             // 
-            addProfileBtn.Anchor = AnchorStyles.Bottom;
-            addProfileBtn.Location = new Point(16, 67);
-            addProfileBtn.Name = "addProfileBtn";
-            addProfileBtn.Size = new Size(188, 45);
-            addProfileBtn.TabIndex = 1;
-            addProfileBtn.Text = "Add Resident Profile";
-            addProfileBtn.UseVisualStyleBackColor = true;
-            addProfileBtn.Click += addProfileBtn_Click;
+            this.addProfileBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.addProfileBtn.Location = new System.Drawing.Point(16, 54);
+            this.addProfileBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.addProfileBtn.Name = "addProfileBtn";
+            this.addProfileBtn.Size = new System.Drawing.Size(188, 36);
+            this.addProfileBtn.TabIndex = 1;
+            this.addProfileBtn.Text = "Add Resident Profile";
+            this.addProfileBtn.UseVisualStyleBackColor = true;
             // 
             // recordControl
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(recordPanel);
-            Name = "recordControl";
-            Size = new Size(1245, 742);
-            recordPanel.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            panel5.ResumeLayout(false);
-            flowLayoutPanel1.ResumeLayout(false);
-            flowLayoutPanel1.PerformLayout();
-            panel3.ResumeLayout(false);
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.recordPanel);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "recordControl";
+            this.Size = new System.Drawing.Size(1245, 594);
+            this.recordPanel.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

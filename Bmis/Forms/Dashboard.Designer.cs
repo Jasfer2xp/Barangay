@@ -63,6 +63,7 @@ namespace Bmis.Forms
             this.panel13 = new System.Windows.Forms.Panel();
             this.purokBtn = new System.Windows.Forms.Button();
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.officialMembersBtn = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -201,6 +202,7 @@ namespace Bmis.Forms
             this.flowLayoutPanel1.Controls.Add(this.panel11);
             this.flowLayoutPanel1.Controls.Add(this.panel12);
             this.flowLayoutPanel1.Controls.Add(this.panel13);
+            this.flowLayoutPanel1.Controls.Add(this.officialMembersBtn);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 40);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -223,7 +225,7 @@ namespace Bmis.Forms
             this.dashboardBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dashboardBtn.FlatAppearance.BorderSize = 0;
             this.dashboardBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dashboardBtn.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashboardBtn.Font = new System.Drawing.Font("Arial", 9F);
             this.dashboardBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dashboardBtn.Image = ((System.Drawing.Image)(resources.GetObject("dashboardBtn.Image")));
             this.dashboardBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -254,7 +256,7 @@ namespace Bmis.Forms
             this.recordsBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.recordsBtn.FlatAppearance.BorderSize = 0;
             this.recordsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.recordsBtn.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.recordsBtn.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.recordsBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.recordsBtn.Image = ((System.Drawing.Image)(resources.GetObject("recordsBtn.Image")));
             this.recordsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -285,7 +287,7 @@ namespace Bmis.Forms
             this.barangayBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.barangayBtn.FlatAppearance.BorderSize = 0;
             this.barangayBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.barangayBtn.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barangayBtn.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barangayBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.barangayBtn.Image = ((System.Drawing.Image)(resources.GetObject("barangayBtn.Image")));
             this.barangayBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -316,7 +318,7 @@ namespace Bmis.Forms
             this.blotterBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.blotterBtn.FlatAppearance.BorderSize = 0;
             this.blotterBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.blotterBtn.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.blotterBtn.Font = new System.Drawing.Font("Arial", 9F);
             this.blotterBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.blotterBtn.Image = ((System.Drawing.Image)(resources.GetObject("blotterBtn.Image")));
             this.blotterBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -347,7 +349,7 @@ namespace Bmis.Forms
             this.officialBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.officialBtn.FlatAppearance.BorderSize = 0;
             this.officialBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.officialBtn.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.officialBtn.Font = new System.Drawing.Font("Arial", 9F);
             this.officialBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.officialBtn.Image = ((System.Drawing.Image)(resources.GetObject("officialBtn.Image")));
             this.officialBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -378,7 +380,7 @@ namespace Bmis.Forms
             this.organizeBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.organizeBtn.FlatAppearance.BorderSize = 0;
             this.organizeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.organizeBtn.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.organizeBtn.Font = new System.Drawing.Font("Arial", 9F);
             this.organizeBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.organizeBtn.Image = ((System.Drawing.Image)(resources.GetObject("organizeBtn.Image")));
             this.organizeBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -409,7 +411,7 @@ namespace Bmis.Forms
             this.reportBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.reportBtn.FlatAppearance.BorderSize = 0;
             this.reportBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.reportBtn.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reportBtn.Font = new System.Drawing.Font("Arial", 9F);
             this.reportBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.reportBtn.Image = ((System.Drawing.Image)(resources.GetObject("reportBtn.Image")));
             this.reportBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -440,7 +442,7 @@ namespace Bmis.Forms
             this.settingBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.settingBtn.FlatAppearance.BorderSize = 0;
             this.settingBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.settingBtn.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settingBtn.Font = new System.Drawing.Font("Arial", 9F);
             this.settingBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.settingBtn.Image = ((System.Drawing.Image)(resources.GetObject("settingBtn.Image")));
             this.settingBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -471,7 +473,7 @@ namespace Bmis.Forms
             this.userBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userBtn.FlatAppearance.BorderSize = 0;
             this.userBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.userBtn.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userBtn.Font = new System.Drawing.Font("Arial", 9F);
             this.userBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.userBtn.Image = ((System.Drawing.Image)(resources.GetObject("userBtn.Image")));
             this.userBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -502,7 +504,7 @@ namespace Bmis.Forms
             this.purokBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.purokBtn.FlatAppearance.BorderSize = 0;
             this.purokBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.purokBtn.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.purokBtn.Font = new System.Drawing.Font("Arial", 9F);
             this.purokBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.purokBtn.Image = ((System.Drawing.Image)(resources.GetObject("purokBtn.Image")));
             this.purokBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -526,6 +528,26 @@ namespace Bmis.Forms
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(884, 804);
             this.mainPanel.TabIndex = 3;
+            // 
+            // officialMembersBtn
+            // 
+            this.officialMembersBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.officialMembersBtn.FlatAppearance.BorderSize = 0;
+            this.officialMembersBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.officialMembersBtn.Font = new System.Drawing.Font("Arial", 9F);
+            this.officialMembersBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.officialMembersBtn.Image = ((System.Drawing.Image)(resources.GetObject("officialMembersBtn.Image")));
+            this.officialMembersBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.officialMembersBtn.Location = new System.Drawing.Point(3, 706);
+            this.officialMembersBtn.Name = "officialMembersBtn";
+            this.officialMembersBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.officialMembersBtn.Size = new System.Drawing.Size(289, 52);
+            this.officialMembersBtn.TabIndex = 11;
+            this.officialMembersBtn.Text = "     Officials";
+            this.officialMembersBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.officialMembersBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.officialMembersBtn.UseVisualStyleBackColor = true;
+            this.officialMembersBtn.Click += new System.EventHandler(this.officialMembersBtn_Click);
             // 
             // Dashboard
             // 
@@ -594,5 +616,6 @@ namespace Bmis.Forms
         private Panel panel15;
         private Panel mainPanel;
         private Label editPic;
+        private Button officialMembersBtn;
     }
 }
